@@ -1,0 +1,64 @@
+Javascript nedir? Ne işe yarar? Hangi soruna cevap vermek için üretilmiştir? Öyküsünü anlatın. Hangi alanlarda kullanılır? Hangi frameWorkler ve kütüphaneler yaygındır?
+
+JavaScript, web tarayıcılarında çalışan bir programlama dilidir. İlk olarak 1995 yılında Netscape Communications tarafından geliştirilmiştir. JavaScript, kullanıcı etkileşimli web sayfaları oluşturmak, web sunucularında çalışan uygulamalar oluşturmak, oyunlar geliştirmek ve hatta mobil uygulamalar oluşturmak için kullanılır.
+
+JavaScript, statik HTML web sayfalarına dinamiklik ve etkileşimlilik eklemek için üretilmiştir. Bu, kullanıcıların web sayfasıyla etkileşimde bulunmasını ve web sayfasının kullanıcı eylemlerine yanıt vermesini sağlar.
+
+JavaScript, web geliştirme, sunucu tarafı geliştirme (Node.js ile), mobil uygulama geliştirme (React Native, Ionic vb. ile) ve hatta masaüstü uygulama geliştirme (Electron.js ile) gibi birçok alanda kullanılır.
+
+JavaScript için birçok framework ve kütüphane bulunmaktadır. En popüler olanları arasında React.js, Angular, Vue.js (front-end frameworkler), Node.js (sunucu tarafı JavaScript çalışma zamanı), Express.js (Node.js için bir web uygulama frameworkü) ve jQuery (JavaScript kütüphanesi) bulunmaktadır.
+
+Nesneye dayalı programlama nedir? hangi diller ve frameworkler yaygındır? Avantajları ve dezavantajları nelerdir?
+
+Nesneye dayalı programlama (OOP), programlamada bir paradigmadır. OOP, gerçek dünyadaki nesnelerin ve etkileşimlerin bir modelini oluşturmayı amaçlar. OOP'de, programlar nesneler adı verilen öğelerden oluşur. Bu nesneler, veri ve bu veriyi işlemek için kullanılan fonksiyonları içerir.
+
+OOP'yi destekleyen birçok programlama dili vardır. En popüler olanları arasında Java, C++, Python, JavaScript ve Ruby bulunmaktadır. Ayrıca, OOP prensiplerini kullanan birçok framework de bulunmaktadır. Örneğin, JavaScript'te React ve Angular, Python'da Django ve Flask, Ruby'de Rails, Java'da Spring ve C++'da Qt bulunmaktadır.
+
+OOP'nin avantajları arasında kodun yeniden kullanılabilirliği, modülerliği ve veri gizliliği bulunmaktadır. Bu, kodun daha kolay anlaşılmasını, bakımını ve genişletilmesini sağlar.
+
+OOP'nin dezavantajları arasında ise karmaşıklık ve hafıza kullanımı bulunmaktadır. OOP, genellikle prosedürel programlamadan daha karmaşıktır ve nesneler genellikle prosedürel programlamadan daha fazla hafıza kullanır. Ayrıca, OOP'nin tüm problemlere en iyi çözüm olduğunu söylemek yanıltıcı olabilir. Bazı durumlardaki problemler, fonksiyonel programlama veya prosedürel programlama gibi diğer paradigmalara daha uygun olabilir.
+
+Fonksiyonel programlama nedir? hangi diller ve frameworkler yaygındır? Avantajları ve dezavantajları nelerdir?
+
+Fonksiyonel programlama (FP), programlamada bir paradigmadır. FP, hesaplamaları bir dizi fonksiyon çağrısı olarak modellemeyi amaçlar. Bu paradigma, yan etkileri (global durum değişiklikleri, I/O işlemleri vb.) en aza indirgemeye çalışır ve fonksiyonların matematiksel fonksiyonlar gibi davranmasını teşvik eder.
+
+Fonksiyonel programlama dilleri arasında Haskell, Erlang, Clojure, Scala ve F# bulunmaktadır. Ancak, birçok modern dil (JavaScript, Python, Ruby vb.) fonksiyonel programlama özelliklerini destekler. Fonksiyonel programlama için özel frameworkler daha az yaygındır, çünkü FP prensipleri genellikle dil seviyesinde uygulanır.
+
+Fonksiyonel programlamanın avantajları arasında kodun tahmin edilebilirliği, test edilebilirliği ve genellikle daha az hata bulunmaktadır. FP, genellikle daha az hata ve daha kolay hata ayıklama sağlar çünkü yan etkileri sınırlar.
+
+Fonksiyonel programlamanın dezavantajları arasında öğrenme eğrisi ve performans bulunmaktadır. FP, özellikle prosedürel veya nesneye dayalı programlama arka planından gelenler için karmaşık olabilir. Ayrıca, bazı FP dilleri, özellikle büyük veri setleri üzerinde çalışırken, prosedürel dillerden daha yavaş olabilir.
+
+Javascriptte kaç adet veri tipi vardır? Bunlar hangileridir? String metotları nelerdir? Number metotları nelerdir?
+
+JavaScript'te yedi adet veri tipi bulunmaktadır:
+
+String
+Number
+Boolean
+Null
+Undefined
+Object
+Symbol
+JavaScript'teki String veri tipi için bazı yaygın metotlar:
+
+charAt(): Belirli bir indisteki karakteri döndürür.
+concat(): İki veya daha fazla stringi birleştirir.
+indexOf(): Bir stringin ilk görünümünün indexini döndürür.
+slice(): Bir stringin bir alt kümesini döndürür.
+split(): Bir stringi bir ayracın etrafında bölerek bir dizi oluşturur.
+toLowerCase(): Bir stringin tüm karakterlerini küçük harfe çevirir.
+toUpperCase(): Bir stringin tüm karakterlerini büyük harfe çevirir.
+trim(): Bir stringin başındaki ve sonundaki boşlukları kaldırır.
+
+JavaScript'teki Number veri tipi için bazı yaygın metotlar:
+
+toFixed(): Bir sayıyı belirli bir ondalık basamağa kadar yuvarlar ve bir string olarak döndürür.
+toPrecision(): Bir sayıyı belirli bir hassasiyete kadar yuvarlar ve bir string olarak döndürür.
+toString(): Bir sayıyı bir stringe dönüştürür.
+valueOf(): Bir Number nesnesinin ilkel değerini döndürür.
+isFinite(): Bir değerin sonlu bir sayı olup olmadığını kontrol eder.
+isInteger(): Bir değerin bir tam sayı olup olmadığını kontrol eder.
+isNaN(): Bir değerin NaN (Not a Number) olup olmadığını kontrol eder.
+isSafeInteger(): Bir değerin güvenli bir tam sayı olup olmadığını kontrol eder.
+parseFloat(): Bir stringi bir ondalık sayıya dönüştürür.
+parseInt(): Bir stringi bir tam sayıya dönüştürür.
