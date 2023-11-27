@@ -1,0 +1,7 @@
+Javascript nedir? Ne işe yarar? Hangi soruna cevap vermek için üretilmiştir? Öyküsünü anlatın. Hangi alanlarda kullanılır? Hangi frameWorkler ve kütüphaneler yaygındır?
+
+Nesneye dayalı programlama nedir? hangi diller ve frameworkler yaygındır? Avantajları ve dezavantajları nelerdir?
+
+Fonksiyonel programlama nedir? hangi diller ve frameworkler yaygındır? Avantajları ve dezavantajları nelerdir?
+
+Javascriptte kaç adet veri tipi vardır? Bunlar hangileridir? String metotları nelerdir? Number metotları nelerdir?
