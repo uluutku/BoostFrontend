@@ -11,6 +11,7 @@
 // .trim()
 // .length
 // .toLowerCase
+// .charAt
 
 // -- Birkaç cümleden oluşan bir metin yazıp myStory isimli bir değişkene atayalım. İçerisinde tekrar eden birkaç kelime bulunsun.
 let myStory =
