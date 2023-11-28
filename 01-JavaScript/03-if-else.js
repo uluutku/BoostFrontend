@@ -2,9 +2,9 @@
 
 const word = prompt("Kontrol edilecek kelimeyi girin:").toLowerCase();
 
-let arrayStrings = word.split("");
+let arrayStrings = word.split(""); 
 arrayStrings.reverse();
-let reversedWord = arrayStrings.join("");
+let reversedWord = arrayStrings.join(""); 
 
 console.log(reversedWord); //debug için
 
