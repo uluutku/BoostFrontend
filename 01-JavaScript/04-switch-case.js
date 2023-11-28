@@ -12,21 +12,22 @@ switch (ay) {
     case "ekim":
     case "aralık":
         gunSayisi = 31;
+        console.log(`${ay} ayı ${gunSayisi} gün içerir.`);
         break;
     case "nisan":
     case "haziran":
     case "eylül":
     case "kasım":
         gunSayisi = 30;
+        console.log(`${ay} ayı ${gunSayisi} gün içerir.`);
         break;
     case "şubat":
         gunSayisi = 28;
+        console.log(`${ay} ayı ${gunSayisi} gün içerir.`);
         break;
     default:
         console.log("Geçersiz ay ismi!");
 }
-
-console.log(`${ay} ayı ${gunSayisi} gün içerir.`);
 
 
 
