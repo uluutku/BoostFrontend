@@ -1,6 +1,7 @@
 // 1- myArray isimli bir dizi tanımlayın. 10 elemandan oluşsun ad soyad yaş true sevdiğiniz meyveler, sevdiğiniz yemekler
-
-let myArray = ["Utku", "Ulu", 30, true, "elma", "armut", "karpuz", "kuru fasulye", "makarna", "pilav"];
+let arrayUzunlugu;
+let arrayUzunlugu2;
+let myArray = ["Utku", "Ulu", 26, true, "elma", "armut", "karpuz", "kuru fasulye", "makarna", "pilav"];
 
 // 2- adınızı değiştirin => Cem => Mert. Diziyi konsola yazdırın.
 myArray[0] = "Mert";
@@ -11,11 +12,13 @@ console.log(myArray.length);
 
 // 4- dizinin sonuna bir hayvan ismi ekleyin. yeni uzunluk bilgisini bir değişkene atayın(.length kullanmadan), konsola yazdırın.
 myArray.push("kedi");
-console.log(myArray);
+arrayUzunlugu = arraySay(myArray);
+console.log(arrayUzunlugu);
 
 // 5- dizinin başına bir hayvan ekleyin. yeni uzunluk bilgisini bir değişkene atayın(.length kullanmadan), konsola yazdırın.
 myArray.unshift("köpek");
-console.log(myArray);
+arrayUzunlugu2 = arraySay(myArray);
+console.log(arrayUzunlugu2);
 
 // 6- dizinin sonundaki elemanı silin. silinen elemanı bir değişkene atayın, konsola yazdırın.
 let lastElement = myArray.pop();
@@ -64,3 +67,12 @@ console.log(firstThree);
 // 16- son dizinizin elemanlarını aralarına "+" koyarak bir stringe çevirin ve konsola yazdırın.
 let string = firstThree.join("+");
 console.log(string);
+
+
+function arraySay(array) {
+    let count = 0;
+    for (let item of array) {
+        count++;
+    }
+    return count;
+}
