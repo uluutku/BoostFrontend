@@ -1,4 +1,7 @@
 // Yazacağınız fonksiyonlar içerisinde console.log ifadesi yer almayacak.
+
+const sayilar = [1, 2, 3, 4, 5, 6, 7];
+
 // 1- Verilen iki sayının çarpımını döndüren bir fonksiyon yazın. (Arrow Function ile)
 
 const carpim = (sayi1, sayi2) => sayi1 * sayi2;
@@ -7,7 +10,7 @@ console.log(carpim(5, 6));
 // 2- Verilen bir cümlenin kelime sayısını döndüren bir arrow fonksiyon yazın.
 
 const kelimeSayisi = (cumle) => cumle.split(" ").length;
-console.log(kelimeSayisi("Merhaba benim adım Ayşe"));
+console.log(kelimeSayisi("Merhaba benim adım Utku"));
 
 // 3- Verilen bir sayının faktöriyelini hesaplayan bir fonksiyon yazın. (Function Declaration Yöntemi ile)
 
@@ -51,6 +54,7 @@ const enBuyuk = function (dizi) {
     return enBuyuk;
 }
 
+console.log(enBuyuk(sayilar));
 
 
 // 6- Verilen bir dizi içindeki sayıların toplamını hesaplayan bir fonksiyon yazın.
@@ -62,6 +66,8 @@ const toplam = function (dizi) {
     }
     return toplam;
 }
+
+console.log(toplam(sayilar));
 
 
 // 7-Yukarıdaki son iki fonksiyonu arrow function olarak yeniden yazın.
@@ -76,6 +82,8 @@ const enBuyuk2 = (dizi) => {
     return enBuyuk;
 }
 
+console.log(enBuyuk2(sayilar));
+
 // Buradan itibaren yalnızca arrow function kullanıyoruz.
 
 const toplam2 = (dizi) => {
@@ -86,6 +94,8 @@ const toplam2 = (dizi) => {
     return toplam;
 }
 
+console.log(toplam2(sayilar));
+
 // 8- Verilen bir stringi tersine çeviren bir fonksiyon yazın.
 
 const tersCevir = (string) => {
@@ -95,6 +105,8 @@ const tersCevir = (string) => {
     }
     return tersString;
 }
+
+console.log(tersCevir("Merhaba benim adım Utku"));
 
 // 9- Verilen bir dizinin elemanlarını rastgele karıştıran bir fonksiyon yazın.
 
@@ -108,6 +120,8 @@ const karistir = (dizi) => {
     return karisikDizi;
 }
 
+console.log(karistir(sayilar));
+
 // 10- Verilen bir sayının pozitif bölenlerini bulan bir fonksiyon yazın.(örn. 12'nin pozitif bölenleri 1,2,3,4,6,12)
 
 const pozitifBolenler = (sayi) => {
@@ -119,6 +133,8 @@ const pozitifBolenler = (sayi) => {
     }
     return bolenler;
 }
+
+console.log(pozitifBolenler(12));
 
 // 11- Verilen bir stringin içinde belirli bir karakterin kaç kez tekrarlandığını hesaplayan bir fonksiyon yazın.
 
@@ -132,6 +148,8 @@ const karakterSayisi = (string, karakter) => {
     return sayac;
 }
 
+console.log(karakterSayisi("Merhaba benim adım Utku", "a"));
+
 // 12 - içerisine kaç adet sayı yazılırsa yazılsın, sayıların toplamını döndüren bir fonksiyon yazınız.
 
 const toplam3 = (...sayilar) => {
@@ -141,3 +159,5 @@ const toplam3 = (...sayilar) => {
     }
     return toplam;
 }
+
+console.log(toplam3(1, 2, 3, 4, 5, 6, 7));
