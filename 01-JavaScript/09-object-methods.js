@@ -142,3 +142,39 @@ for (let i = 0; i < aracBilgileri.servisKayitlari.length; i++) {
         console.log(`${servisKaydi.tarih} - ${detay.aciklama} - ${detay.ucret} TL`);
     }   
 }
+
+// student isimli bir nesne oluşturun ve içerisine 3 adet özellik ekleyin. Nesnenin özelliklerini `for...in` döngüsüyle dolaşan ve konsola yazdıran bir fonksiyon yazın.
+
+const student = {
+    name: "Utku",
+    age: 26,
+    job: "Mühendis"
+};  
+
+// İçerisinde 3 adet öğrenci nesnesi bulunan bir dizi oluşturun. her nesnenin kendisine ait isim ve not özellikleri bulunsun.(örn. {name: "Cem", grades: [80, 90, 50]}) Öğrencilerin ortalama notlarını `for...of` döngüsü kullanarak hesaplayın ve dersten geçip geçmedikleri bilgisini isimleriyle birlikte konsola yazdırın. (Geçer not 60)
+
+const students = [
+
+    {
+        name: "Utku",
+        grades: [80, 90, 50]
+    },
+    {
+        name: "Fırat",
+        grades: [80, 90, 50]
+    },
+    {
+        name: "Eren",
+        grades: [80, 90, 50]
+    }
+];
+
+for (const student of students) {
+    let sum = 0;
+    for (const grade of student.grades) {
+        sum += grade;
+    }
+    const average = sum / student.grades.length;
+    console.log(`${student.name} -> ${average >= 60 ? "Geçti" : "Kaldı"}`);
+}
+
