@@ -145,36 +145,54 @@ for (let i = 0; i < aracBilgileri.servisKayitlari.length; i++) {
 
 // student isimli bir nesne oluşturun ve içerisine 3 adet özellik ekleyin. Nesnenin özelliklerini `for...in` döngüsüyle dolaşan ve konsola yazdıran bir fonksiyon yazın.
 
-const student = {
-    name: "Utku",
-    age: 26,
-    job: "Mühendis"
-};  
+// const student = {
+//     name: "Utku",
+//     age: 26,
+//     job: "Mühendis"
+// };  
+
+// function showProperties(obj) {
+//     for (const key in obj) {
+//         console.log(object[key]);  
+//     }
+// }
+
+// showProperties(student); 
+
 
 // İçerisinde 3 adet öğrenci nesnesi bulunan bir dizi oluşturun. her nesnenin kendisine ait isim ve not özellikleri bulunsun.(örn. {name: "Cem", grades: [80, 90, 50]}) Öğrencilerin ortalama notlarını `for...of` döngüsü kullanarak hesaplayın ve dersten geçip geçmedikleri bilgisini isimleriyle birlikte konsola yazdırın. (Geçer not 60)
 
 const students = [
-
     {
         name: "Utku",
-        grades: [80, 90, 50]
+        grades: [100, 90, 95]
     },
     {
         name: "Fırat",
-        grades: [80, 90, 50]
+        grades: [100, 99, 98]
     },
     {
-        name: "Eren",
-        grades: [80, 90, 50]
+        name: "Cem",
+        grades: [20, 30, 10]
     }
 ];
 
-for (const student of students) {
+for (let student of students) {
+    let sum = 0; //
+    for (let grade of student.grades) {
+        sum += grade; // sum = sum + grade;
+    }
+    const average = sum / student.grades.length; // average = sum / student.grades.length;
+    console.log(`${student.name} -> ${average >= 60 ? "Geçti" : "Kaldı"}`);  
+}
+
+function passIdentifier (student) {
     let sum = 0;
-    for (const grade of student.grades) {
+    for (let grade of student.grades) {
         sum += grade;
     }
     const average = sum / student.grades.length;
-    console.log(`${student.name} -> ${average >= 60 ? "Geçti" : "Kaldı"}`);
+    return average >= 60 ? "Geçti" : "Kaldı";
 }
 
+passIdentifier()
