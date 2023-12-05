@@ -145,6 +145,8 @@ const del = (url, cb) => {
     xhr.send()
 }
 
+
+
 get ("https://jsonplaceholder.typicode.com/posts", (err, data) => {
     if(err){
         console.log(err);
@@ -155,9 +157,9 @@ get ("https://jsonplaceholder.typicode.com/posts", (err, data) => {
 )
 
 post("https://jsonplaceholder.typicode.com/posts", {
-    title: "foo",
-    body: "bar",
-    userId: 1
+    title: "Utku",
+    body: "Ulu",
+    userId: 37
 }, (err, data) => {
     if(err){
         console.log(err);
@@ -167,9 +169,9 @@ post("https://jsonplaceholder.typicode.com/posts", {
 })
 
 put("https://jsonplaceholder.typicode.com/posts/1", {
-    title: "foo",
-    body: "bar",
-    userId: 1
+    title: "Utku",
+    body: "Ulu",
+    userId: 37
 }, (err, data) => {
     if(err){
         console.log(err);
@@ -179,9 +181,9 @@ put("https://jsonplaceholder.typicode.com/posts/1", {
 })
 
 patch("https://jsonplaceholder.typicode.com/posts/1", {
-    title: "foo",
-    body: "bar",
-    userId: 1
+    title: "Utku",
+    body: "Ulu",
+    userId: 37
 }, (err, data) => {
     if(err){
         console.log(err);
