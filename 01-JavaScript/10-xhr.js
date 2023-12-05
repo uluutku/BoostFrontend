@@ -149,8 +149,10 @@ const del = (url, cb) => {
 
 get ("https://jsonplaceholder.typicode.com/posts", (err, data) => {
     if(err){
+        console.log("Get işlemi patladı")
         console.log(err);
     } else {
+        console.log("Get işlemi başarılı");
         console.log(data);
     }
 }
@@ -162,20 +164,23 @@ post("https://jsonplaceholder.typicode.com/posts", {
     userId: 37
 }, (err, data) => {
     if(err){
+        console.log("Post işlemi patladı")
         console.log(err);
     } else {
+        console.log("Post işlemi başarılı");
         console.log(data);
     }
 })
 
 put("https://jsonplaceholder.typicode.com/posts/1", {
     title: "Utku",
-    body: "Ulu",
     userId: 37
 }, (err, data) => {
     if(err){
+        console.log("Put işlemi patladı")
         console.log(err);
     } else {
+        console.log("Put işlemi başarılı");
         console.log(data);
     }
 })
@@ -186,10 +191,24 @@ patch("https://jsonplaceholder.typicode.com/posts/1", {
     userId: 37
 }, (err, data) => {
     if(err){
+        console.log("Patch işlemi patladı")
         console.log(err);
     } else {
+        console.log("Patch işlemi başarılı");
         console.log(data);
     }
 })  
+
+del("https://jsonplaceholder.typicode.com/posts/1", (err, data) => {
+    if(err){
+        console.log("Delete işlemi patladı")
+        console.log(err);
+    } else {
+        console.log("Delete işlemi başarılı");
+        console.log(data);
+    }
+})
+
+
 
 
